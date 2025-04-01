@@ -137,8 +137,6 @@ Here, `IntContainer` is the common interface for all container implementations, 
 
 The `IPv4Converter` class is designed for maximum efficiency and assumes that all input IP addresses are valid. It performs **no validation** and will return an arbitrary integer if given an incorrectly formatted IP address. If input validation is necessary, one can either apply a filtering step to the string stream before conversion or implement a modified version of `IPv4Converter` that includes validation logic.
 
-Performance benchmarks for different converter implementations can be found in the **`src/jmh`** directory. Based on current testing, the solution appears to be near optimal in terms of speed and memory efficiency.
-
 ## License
 This project is licensed under the MIT License.
 
